@@ -1,0 +1,8 @@
+High Score Easy: 48
+High Score Medium: 0
+High Score Hard: 0
+Games Played: 100
+Score: 62
+Apples Eaten: 33
+Oranges Eaten: 52
+Bomb Eaten: 0
