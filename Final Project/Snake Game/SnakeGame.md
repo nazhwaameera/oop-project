@@ -379,5 +379,7 @@ Kelas ViewListener merupakan kelas dimana tampilan yang telah kita buat menerima
 [https://github.com/jbberinger/Snake/tree/4271e93b399c01baa9e67da80383c220e16e691b]
 
 ### Kontributor
+
 Nazhwa Ameera H.    05111940000133  (F)
+
 Zahrotul Adillah    05111940000139  (A)
