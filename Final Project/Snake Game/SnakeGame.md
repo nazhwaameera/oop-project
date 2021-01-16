@@ -11,7 +11,8 @@ Snake Game adalah sebuah game sederhana dimana pemain diberikan seekor ular deng
 Kelas ini merupakan kelas dimana semua input diterima kemudian diolah. Singkatnya, ini adalah kelas berisikan method-method yang membantu pemain untuk memainkan permainan.
 
 Sebagai contoh 
-switch (key.getKeyCode()) {
+{
+    switch (key.getKeyCode()) {
             case KeyEvent.VK_UP:
                 if (direction != Direction.DOWN && !buttonPressed) {
                     direction = Direction.UP;
@@ -56,7 +57,9 @@ switch (key.getKeyCode()) {
         }
     }
 
-    baris kode di atas mengatur bagaimana ualr dapat digerakkan, yakni dengan arrow key dan beberapa tombol lain yang dapat ditekan untuk menjalankan fungsi lainnya seperti tombol 'P' untuk memberhentikan sementara permainan.
+}
+
+    baris kode di atas mengatur bagaimana ular dapat digerakkan, yakni dengan arrow key dan beberapa tombol lain yang dapat ditekan untuk menjalankan fungsi lainnya seperti tombol 'P' untuk memberhentikan sementara permainan.
 
 ### Model.java
 
@@ -64,7 +67,7 @@ Kelas Model merupakan kelas dimana logika game berada. Pengecekan collision, gen
 
 Modifikasi yang dilakukan terhadap kelas ini antara lain sebagai berikut
 
-private int score = 0;
+{private int score = 0;
 private int applesEaten = 0;
 private int orangesEaten = 0;
 private int rottenApplesEaten = 0;
@@ -73,7 +76,7 @@ private boolean isEatingOrange;
 private boolean isEatingRottenApple;
 private final Point apple = new Point();
 private final Point orange = new Point();
-private final Point rottenapple = new Point();
+private final Point rottenapple = new Point();}
 
 Kami membuat beberapa variabel baru untuk mendukung beberapa fitur yang hendak kami tambahkan. Varibel score contohnya, dibuat untuk menggantikan fungsi variabel applesEaten sehingga variasi score dari tiap objek yang dimakan dapat diberikan.
 
@@ -208,12 +211,13 @@ yang, seperti namanya, berfungsi untuk menggambar titik-titik pada tampilan laya
 
 Kelas GamePanel merupakan kelas dimana tampilan layar saat game sedang dimainkan dibuat. Modifikasi yang kami lakukan di kelas ini berhubungan erat dengan modifikasi yang telah dilakukan di kelas Model.java sebelumnya, di antaranya adalah penambahan variabel-variabel baru
 
-private boolean isEatingApple;
+{private boolean isEatingApple;
 private boolean isEatingOrange;
 private boolean isEatingRottenApple;
 private final Point apple;
 private final Point orange;
-private final Point rottenapple;
+private final Point rottenapple;}
+
 
 dan pembuatan method-method baru
 
@@ -339,10 +343,9 @@ public void paintDots() {
 }
 
 penambahan method di atas untuk menggambar titk-titik, dan perubahan terhadap jenis font yang kami gunakan
+{Font font = new Font("Monospaced", Font.BOLD, width / 10);
 
-Font font = new Font("Monospaced", Font.BOLD, width / 10);
-
-Font font = new Font("Arial", Font.HANGING_BASELINE, width / 30);
+Font font = new Font("Arial", Font.HANGING_BASELINE, width / 30);}
 
 ### View.java
 Kelas view merupakan kelas dimana semua tampilan layar yang telah kita buat digabungkan menjadi satu.
